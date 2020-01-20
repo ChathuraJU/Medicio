@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Medi-Tenders</title>
+
+  <!-- css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
+  <link href="css/nivo-lightbox.css" rel="stylesheet" />
+  <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg4.css" rel="stylesheet" type="text/css" />
+  <!-- template skin -->
+  <link id="t-colors" href="color/default.css" rel="stylesheet">
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/nivo-lightbox.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  
+  <!-- =======================================================
+    Theme Name: Medicio
+    Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+   <style type="text/css">
+  /* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: none;
+}
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+.slick-slide img {
+    display: block;
+}
+.slick-slide.slick-loading img {
+    display: none;
+}
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slick-arrow {
+    background: #fff;
+    padding: 0;
+    border: none;
+}
+.slick-arrow img {
+    opacity: 0.4;
+}
+.slick-arrow img:hover {
+    opacity: 1.0;
+}
+
+/* News Styling */
+.news-slider {
+  padding: 40px 0;
+}
+.blogPost--small {
+    color: #7f7f7f;
+    margin: 20px 30px 40px 0;
+}
+.blogPost--small .media > .pull-left {
+    margin-right: 25px;
+}
+.blogPost--small a {
+    color: #0099CC;
+}
+.blogPost--small .date, .blogPost--small .dateEl2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: #0099CC;
+}
+.blogPost--small .date span, .blogPost--small .dateEl2 span {
+    display: inline-block;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-indent: -0.1em;
+    color: #fff;
+    font-weight: bold;
+}
+.blogPost--small .date small, .blogPost--small .dateEl2 small {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.blogPost--small h4 {
+    margin: 0 0 12px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.newsNav .row {
+  margin: 0 0;
+}
+</style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="top-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-left">MEDI-TENDERS  |  National Hospital Kandy</p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <p class="bold text-right" ><a href="#" data-toggle="modal" data-target="#modal_form_vertical"style="color: #fff; ">SIGN IN </a>| <a href="index-form.html" style="color: #fff;"> REGISTER</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container navigation">
+
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#intro">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tenders <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="alltenders.html">All Tenders</a></li>
+                  <li><a href="appliedtenders.html">Applied Tenders</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#aboutus">About US</a></li>
+            <li><a href="#partners">Our Partners</a></li>
+
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+      <div class="intro-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                <h2 class="h-ultra">WELCOME TO MEDI-TENDERS</h2>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                <h4 class="h-light">Medi-Tenders allows the suppliers to capture the tender notices of National Hospital Kandy and submit bids online through the portal.</h4>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                <img src="img/dummy/img-1.png" class="img-responsive" alt="" style="width: 600px; height: 400px;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /Section: intro -->
+
+    <!-- Section: tenders -->
+    <section id="tenders" class="home-section paddingtop-80">
+
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12">
+            <div class="col-md-8">
+                <div class="section-heading text-left">
+                  <h3 class="h-bold">Recent Tenders</h3>
+                </div>
+                  <div class="news-slider">
+                    <div class="slide">
+                      <div class="blogPost--small">
+                        <div class="media">  
+                          <div class="media-body" >
+                            <div>
+                              <h4 class="media-heading">
+                                  <a href="#">Tender Title: Purchase of Incubator</a>
+                              </h4>
+                              <p>Buyers name: <br>
+                                items: <br>
+                                Quantity: <br>
+                                Procurrent id: <br>
+                                Publiched Date: <br>
+                                Closing Date
+                              </p>
+                              <div class="cta-btn">
+                                <a href="alltenders.html#modal_full" class="btn btn-skin btn-lg" style="color: white;">Apply</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- / blogPost -->
+
+                      <div class="blogPost--small">
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                              <a href="#">Tender Title: Purchase of Incubator</a>
+                            </h4>
+                            <p>Buyers name: <br>
+                              items: <br>
+                              Quantity: <br>
+                              Procurrent id: <br>
+                              Publiched Date: <br>
+                              Closing Date
+                            </p>
+                            <div class="cta-btn">
+                                <a href="#" class="btn btn-skin btn-lg" style="color: white;">Apply</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- / blogPost -->
+                    </div><!-- / slide1 -->
+        
+                    <div class="slide">
+                      <div class="blogPost--small">
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                              <a href="#">Tender Title: Purchase of Incubator</a>
+                            </h4>
+                            <p>Buyers name: <br>
+                              items: <br>
+                              Quantity: <br>
+                              Procurrent id: <br>
+                              Publiched Date: <br>
+                              Closing Date
+                            </p>
+                              <div class="cta-btn">
+                                <a href="#" class="btn btn-skin btn-lg" style="color: white;">Apply</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div><!-- / blogPost -->
+                      <div class="blogPost--small">
+                        <div class="media">
+                          <div class="media-body">
+                            <h4 class="media-heading">
+                              <a href="#">Tender Title: Purchase of Incubator</a>
+                            </h4>
+                            <p>Buyers name: <br>
+                              items: <br>
+                              Quantity: <br>
+                              Procurrent id: <br>
+                              Publiched Date: <br>
+                              Closing Date
+                            </p>
+                              <div class="cta-btn">
+                                <a href="#" class="btn btn-skin btn-lg" style="color: white;">Apply</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div><!-- / blogPost -->
+                    </div><!-- / slide2 -->
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <button id="ct-js-district-calendar--prev" type="button" class="slick-arrow next"><img src="https://www.solodev.com/assets/news-slider/arrow-prev.jpg" alt="Previous"></button>
+                        <button id="ct-js-district-calendar--next" type="button" class="slick-arrow next"><img src="https://www.solodev.com/assets/news-slider/arrow-next.jpg" alt="Next"></button>
+                    </div>
+                    <div class="col-md-4"></div>
+                  </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-wrapper">
+                <div class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+
+                  <div class="panel panel-skin">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Documents </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                          <div class="box text-center">
+                            <h6 class="h-bold">Download the Payment Voucher</h6>
+                            <a download="/img/dwn.jpg/" class="fa fa-download fa-3x circled bg-skin"></a>
+                          </div>
+                          <br>
+                          <div class="box text-center">
+                            <h6 class="h-bold">Download the Document Checklist </h6>
+                            <a download="/img/dwn.jpg/" class="fa fa-file fa-3x circled bg-skin"></a>
+                          </div>
+
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-skin">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Openning Hours </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <h6 class="h-bold">Monday - Friday</h6>
+                            <p>
+                              06.00 am - 07.00 pm<br>
+                              12.00 pm - 13.00 pm<br>
+                              17.00 pm - 18.00 pm<br>
+                            </p>
+                            <h6 class="h-bold">Saturday / Sunday & Public Holidays</h6>
+                            <p>
+                              06.00 am - 07.00 pm<br>
+                              11.30 pm - 13.00 pm<br>
+                              16.30 pm - 18.00 pm<br>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Section: tenders -->
+
+
+    <!-- /Section: contact -->
+    <section id="contact" class="home-section paddingtop-80">
+      <div class="container marginbot-50">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+              <div class="section-heading text-center">
+                <h2 class="h-bold">CONTACT US</h2>
+                <p>If you have a problem with regard to a tender or relatted service, please contact us via any of the following modes of communication. Thank you</p>
+              </div>
+            </div>
+            <div class="divider-short"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box text-center">
+
+                <i class="fa fa-phone fa-3x circled bg-skin"></i>
+                <h5 class="h-bold">Contact No.</h5>
+                <p>
+                    <p>Hotline : (+94) 812 222 261</p>
+                    <p>Phone   : (+94) 812 233 337 -42</p> 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box text-center">
+
+                <i class="fa fa-fax fa-3x circled bg-skin"></i>
+                <h4 class="h-bold">Fax No. </h4>
+                <p> (+94) 812 233 343</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box text-center">
+                <i class="fa fa-envelope fa-3x circled bg-skin"></i>
+                <h4 class="h-bold">Email Address</h4>
+                <p> info@kandy-hospital.health.gov.lk</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box text-center">
+
+                <i class="fa fa-map-marker fa-3x circled bg-skin"></i>
+                <h4 class="h-bold">Address</h4>
+                <p>National Hospital Kandy
+                    William Gopallawa Mawatha, Kandy 20000, 
+                    Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section: contact -->
+
+
+    <!-- Section: about us -->
+    <section id="aboutus" class="home-section nopadding paddingtop-60">
+      <div class="container marginbot-50">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+              <div class="section-heading text-center">
+                <h2 class="h-bold">ABOUT US</h2>
+              </div>
+            </div>
+            <div class="divider-short"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="wow fadeInUp" data-wow-delay="0.2s">
+              <img src="img/dummy/img-1.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="row">
+
+              <div class="wow fadeInRight" data-wow-delay="0.1s">
+                  <div class="service-desc">
+                    <p>Medi-Tenders is Sri Lanka’s only ONLINE marketplace that connects National Hospital Kandy and suppliers with ease. Currently, Medi-Tenders connect National Hospital Kandy only with this portal and our goal is to bring all 1118 curative healthcare institutions in Sri Lanka onto one online platform and provide visibility to SME’s and provide them with an online system to receive Tender Notices. </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <iframe  width="600" height="340" src="https://www.youtube.com/embed/OKEvObabY8g" frameborder="0" allowfullscreen ng-show="showvideo"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Section: services -->
+
+
+    <!-- Section: partners -->
+    <section id="partners" class="home-section paddingbot-60">
+      <div class="container marginbot-50">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+              <div class="section-heading text-center">
+                <h2 class="h-bold">OUR PARTNERS</h2>
+                <p>Take a look at other partners who are operating with us.</p>
+              </div>
+            </div>
+            <div class="divider-short"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.biomedite.lk/"><img src="img/dummy/biomedite.jpg" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.daytona.lk/"><img src="img/dummy/daytona.jpg" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.aipl.lk/our-products/healthcare/"><img src="img/dummy/analytical.png" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.lionchem.lk/"><img src="img/dummy/lionchem.jpg" alt="" style="width:200px;height:100px;" /></a>
+            </div>
+          </div>   
+        </div>
+        <div class="row"> 
+          <div class="col-sm-6 col-md-3">        
+            <div class="partner">
+              <a href="http://www.wagagroup.lk/"><img src="img/dummy/waga.jpg" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.islandwidesci.lk/"><img src="img/dummy/islandwide.png" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href="http://www.hemsons.lk/"><img src="img/dummy/hemsons.jpg" alt="" style="width:200px;height:100px;"/></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="partner">
+              <a href=https://www.lablink.lk/><img src="img/dummy/lablink.jpg" alt="" style="width:200px;height:100px;" /></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Section: partners -->
+
+    <!-- Vertical form modal -->
+    <div id="modal_form_vertical" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                  <div class="form-wrapper">
+                    <div class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+
+                      <div class="panel panel-skin">
+                        <div class="panel-heading">
+                          <h3 class="panel-title"><span class="fa fa-pencil-square-o"></span> Login </h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <form action="" method="post" role="form" class="contactForm lead">
+                              <div class="col-md-1"></div>
+                              <div class="col-md-10">
+
+                                <div class="row">
+                                    <div class="form-group">
+                                      <label>Enter Username</label>
+                                      <input type="text" name="bidder_username" id="bidder_username" class="form-control input-md" data-rule="minlen:5" data-msg="Please enter at least 5 chars" placeholder="Enter Username">
+                                      <div class="validation"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="form-group">
+                                    <label>Enter Password</label>
+                                    <input type="Password" name="bidder_password" id="bidder_password" class="form-control input-md" data-rule="Password" data-msg="Please enter a valid Password" placeholder="Enter Password">
+                                    <div class="validation"></div>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-md-1"></div>
+
+                              <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    <input type="submit" value="Submit" class="btn btn-skin btn-block btn-lg">
+
+                                </div>
+                                <div class="col-md-3"></div>
+                              </div>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div >
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /vertical form modal -->
+
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>ABOUT MEDI-TENDERS</h5>
+                <p>
+                 Medi-Tenders is the portal where The National Hospital Kandy calls tenders for all the instrumentality wants of the hospital. 
+                </p>
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>USEFUL LINKS</h5>
+                <ul>
+                  <li><a href="https://www.gov.lk/">Government of Sri Lanka</a></li>
+                  <li><a href="http://www.president.gov.lk/"></a>President of Sri Lanka</li>
+                  <li><a href="http://www.health.gov.lk/moh_final/english/">Minstry of Health</a></li>
+                  <li><a href="http://www.kandy-hospital.health.gov.lk/index.php">The National Hospital Kandy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>CONTACT US</h5>
+                <ul>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-phone-square fa-stack-1x fa-inverse"></i>
+                    </span>HOTLINE :  +94 812 222 261 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>PHONE : +94 812 233 337-42 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+    									<i class="fa fa-circle fa-stack-2x"></i>
+    									<i class="fa fa-fax fa-stack-1x fa-inverse"></i>
+    								</span>FAX : +94 812 233 343 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+									    <i class="fa fa-circle fa-stack-2x"></i>
+									    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+							    	</span>EMAIL : info@kandy-hospital.health.gov.lk
+                  </li>
+                </ul>
+              </div>
+
+              <div class="widget">
+                <h5>Follow us</h5>
+                <ul class="company-social">
+                  <li class="social-facebook"><a href="https://www.facebook.com/nhkandy/"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Our location</h5>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                </span>National Hospital Kandy, William Gopallawa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mw, Kandy 20000, Sri Lanka
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5880600599253!2d80.63007491430927!3d7.287620815831245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae36882b22910bf%3A0x82b71793a1e570c5!2sNational%20Hospital%20Kandy!5e0!3m2!1sen!2slk!4v1578904284240!5m2!1sen!2slk" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="text-left">
+                  <p>&copy;Copyright - Medicio Theme. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInRight" data-wow-delay="0.1s">
+                <div class="text-right">
+                  <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact. 
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
+                    -->
+                    Designed by <i><a href="https://www.facebook.com/chathurajaliya.udurawana">Chathura J Udurawana</a></i> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+  <!-- Core JavaScript Files -->
+  
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('.news-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    arrows: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    dots: false,
+      pauseOnHover: false,
+      responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
+  });
+});
+</script>
+
+</body>
+
+</html>

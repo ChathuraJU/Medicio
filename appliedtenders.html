@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Medi-Tenders</title>
+
+  <!-- css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" >
+  <link href="css/nivo-lightbox.css" rel="stylesheet" />
+  <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+  <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+  <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/core.min.css" rel="stylesheet" type="text/css">
+  <link href="css/components.min.css" rel="stylesheet" type="text/css">
+  <link href="css/colors.min.css" rel="stylesheet" type="text/css">
+  <!-- /css -->
+
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg6.css" rel="stylesheet" type="text/css" />
+  <!-- template skin -->
+  <link id="t-colors" href="color/default.css" rel="stylesheet">
+
+  <script src="plugins/loaders/pace.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="plugins/loaders/blockui.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/nivo-lightbox.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+  <script src="plugins/tables/datatables/datatables.min.js"></script>
+  <script src="plugins/selects/select2.min.js"></script>
+  <script src="plugins/fileinput/plugins/purify.min.js"></script>
+  <script src="plugins/fileinput/plugins/sortable.min.js"></script>
+  <script src="plugins/fileinput/fileinput.min.js"></script>
+  <script src="plugins/forms/styling/uniform.min.js"></script>
+  <script src="plugins/forms/styling/switchery.min.js"></script>
+  <script src="plugins/forms/styling/switch.min.js"></script>
+
+  <script src="assets/js/app.js"></script>
+  <script src="js/datatables_basic.js"></script>
+  <script src="js/form_checkboxes_radios.js"></script>
+  
+  <!-- =======================================================
+    Theme Name: Medicio
+    Theme URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+   <style type="text/css">
+  /* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: none;
+}
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+.slick-slide img {
+    display: block;
+}
+.slick-slide.slick-loading img {
+    display: none;
+}
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.slick-arrow {
+    background: #fff;
+    padding: 0;
+    border: none;
+}
+.slick-arrow img {
+    opacity: 0.4;
+}
+.slick-arrow img:hover {
+    opacity: 1.0;
+}
+
+/* News Styling */
+.news-slider {
+  padding: 40px 0;
+}
+.blogPost--small {
+    color: #7c7b7b;
+    margin: 20px 30px 40px 0;
+}
+.blogPost--small .media > .pull-left {
+    margin-right: 25px;
+}
+.blogPost--small a {
+    color: #662d91;
+}
+.blogPost--small .date, .blogPost--small .dateEl2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: #662d91;
+}
+.blogPost--small .date span, .blogPost--small .dateEl2 span {
+    display: inline-block;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-indent: -0.1em;
+    color: #fff;
+    font-weight: bold;
+}
+.blogPost--small .date small, .blogPost--small .dateEl2 small {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.blogPost--small h4 {
+    margin: 0 0 12px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.newsNav .row {
+  margin: 0 0;
+}
+</style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="top-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-left">MEDI-TENDERS  |  National Hospital Kandy</p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <p class="bold text-right">Mr.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container navigation">
+
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html#intro">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tenders <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="alltenders.html">All Tenders</a></li>
+                  <li><a href="appliedtenders.html">Applied Tenders</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#about">About US</a></li>
+            <li><a href="index.html#partners">Our Partners</a></li>
+
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+      <div class="intro-content" style="background-image: url('img/slides/slide3/bg.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                <h2 class="h-ultra">Applied Tenders</h2>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                <h4 class="h-light">Once the NRP is accepted, download the BID Document, submit the filled form with the updated Bid Document </h4>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section: intro -->
+
+    <!-- Section Table-->
+      <!-- Basic datatable -->
+        <div class="panel panel-flat bg-white">
+          <table class="table datatable-basic">
+            <thead>
+              <tr>
+                <th>Procurement ID</th>
+                <th>NRP Accepted</th>
+                <th>Bid Document</th>
+                <th>Place Bid</th>
+                <th>Bid Status</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#######</td>
+                <td>Accepted</td>
+                <td>#####.pdf</td>
+                <td>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full">BID <i class="fa fa-gavel"></i></button>
+                </td>
+                <td> Pending </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full2">VIEW <i class="fa fa-eye"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>#######</td>
+                <td>Accepted</td>
+                <td>#####.pdf</td>
+                <td>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full">BID <i class="fa fa-gavel"></i></button>
+                </td>
+                <td> Pending </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full2">VIEW <i class="fa fa-eye"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>#######</td>
+                <td>Accepted</td>
+                <td>#####.pdf</td>
+                <td>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full">BID <i class="fa fa-gavel"></i></button>
+                </td>
+                <td> Pending </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full2">VIEW <i class="fa fa-eye"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>#######</td>
+                <td>Accepted</td>
+                <td>#####.pdf</td>
+                <td>
+                  <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full">BID <i class="fa fa-gavel"></i></button>
+                </td>
+                <td> Pending </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal_full2">VIEW <i class="fa fa-eye"></i></button>
+                </td>
+                <td>
+                    
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      <!-- /basic datatable -->
+    <!-- /Section Table-->
+
+
+    <!-- Full width modal 1 -->
+    <div id="modal_full" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-full">
+        <div class="modal-content">
+          <div class="modal-header bg-blue-300">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title "> <i class="fa fa-gavel position-left"></i>Place a Bid </h5>
+          </div>
+
+          <div class="modal-body">
+              <fieldset>
+                  <legend class="text-semibold">
+                      <i class="fa fa-paper-plane position-left"></i>
+                      <h7>Preliminary Evaluation Form</h7>
+                      <a class="control-arrow" data-toggle="collapse" data-target="#demo1">
+                          <i class="fa fa-chevron-circle-down"></i>
+                      </a>
+                  </legend>
+                  <div class="collapse in" id="demo1">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="form-group">  
+                                  <label> Make : <span class="text-danger">*</span></label>
+                                  <input type="text" id="make" name="make" class="form-control required"  />                          
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group">  
+                                  <label> Model : <span class="text-danger">*</span></label>
+                                  <input type="text" id="model" name="model" class="form-control required"  />                         
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="form-group">  
+                                  <label> Unit Price : <span class="text-danger">*</span></label>
+                                  <input type="text" id="unitprice" name="unitprice" class="form-control required"  />                         
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 01. Bid Submission Form
+                                <input type="checkbox" id="B01" name="B01" class="switchery">
+                              </label>
+                            </div>
+                              <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 02. Bid Security
+                                <input type="checkbox" id="B02" name="B02" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 03. Power of Attorney to the signatory
+                                <input type="checkbox" id="B03" name="B03" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 04. Price Schedule -Goods
+                                <input type="checkbox" id="B04" name="B04" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 05. Delivery Schedule - Goods (8-12 week)
+                                <input type="checkbox" id="B05" name="B05" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 06. Price Schedule - Maintenance
+                                <input type="checkbox" id="B06" name="B06" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 07. Cost of Major Replacements Data
+                                <input type="checkbox" id="B07" name="B07" class="switchery">
+                              </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 08. Manufacturer's Authorization Letter
+                                <input type="checkbox" id="B08" name="B08" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 09. Technical Specification Response
+                                <input type="checkbox" id="B09" name="B09" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 10. Detailed Pro Forma Invoice
+                                <input type="checkbox" id="B10" name="B10" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 11. Technical Literature, Product data sheet
+                                <input type="checkbox" id="B11" name="B11"class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 12. Post Qualification Data
+                                <input type="checkbox" id="B12" name="B12" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 13. Valid CDDA / NMRA Certificate 
+                                <input type="checkbox" id="B13" name="B13" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 14. Valid Import License from CDDA / NMRA
+                                <input type="checkbox" id="B14" name="B14" class="switchery">
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 15. Copy of Business Registration Certificate
+                                <input type="checkbox" id="B15" name="B15" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 16. Certificate of Registration as an Agent
+                                <input type="checkbox" id="B16" name="B16" class="switchery">
+                              </label>
+                            </div>
+
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 17. Insurance Certificate from POD
+                                <input type="checkbox" id="B17" name="B17" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 18. Warranty Certificate of Manufacture
+                                <input type="checkbox" id="B18" name="B18" class="switchery">
+                              </label>
+                            </div>
+                              <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 19. Spare Parts Available
+                                <input type="checkbox" id="B19" name="B19" class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 20. Declaration from the Manufacture
+                                <input type="checkbox" id="B20" name="B20"class="switchery">
+                              </label>
+                            </div>
+                            <div class="checkbox checkbox-switchery switchery-xs">
+                              <label> 21. Plan of Installation Room 
+                                <input type="checkbox" id="B21" name="B21" class="switchery">
+                              </label>
+                            </div>
+                        </div>
+                            
+                      </div>
+                      <div class="row">&nbsp;</div>
+                      <div class="divider-short"></div>
+                      <div class="row">&nbsp;</div>
+
+                      <div class="row">
+                          <div class="col-lg-4">
+                              <label> Upload the Filled Bid Document here </label>
+                               <div class="col-md-6" style="height: 100%;">
+                                  <div class="col-sm-4 col-sm-offset-2" style="margin-top: 10px;">
+                                      <img src="img/upload.jpg" height ="300px"  />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-8">
+                              <div class="form-group">
+                                  <input type="file" class="file-input-ajax" multiple="multiple">
+                              </div>
+                          </div>
+                      
+                      </div>
+                  </div>
+                  
+              </fieldset>
+
+              <fieldset>
+                  <legend class="text-semibold">
+                      <i class="fa fa-paper-plane position-left"></i>
+                      <h7>Declaration</h7>
+                      <a class="control-arrow" data-toggle="collapse" data-target="#demo2">
+                          <i class="fa fa-chevron-circle-down"></i>
+                      </a>
+                  </legend>
+                  <div class="collapse in" id="demo2" >
+                      <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="checkbox checkbox-switchery switchery-lg">
+                              <label class="col-lg-11">I hereby declare that the condition of Services & Maintenance agreement shall not be changed and shall not request to change, after the pre agreed price of 05 years, if the agreement should be extended beyond the original 05 years period.
+                                <input type="checkbox" id="B22" name="B22" class="switchery col-lg-1">
+                              </label>
+                            </div>
+
+                        </div>
+                      </div> 
+
+                  </div>
+
+              </fieldset>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /full width modal 1 -->
+
+        <!-- Full width modal -->
+    <div id="modal_full2" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-full">
+        <div class="modal-content">
+          <div class="modal-header bg-blue-300">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title "> <i class="fa fa-gavel position-left"></i>VIEW BID </h5>
+          </div>
+
+          <div class="modal-body">
+              <fieldset>
+                  <legend class="text-semibold">
+                      <i class="fa fa-paper-plane position-left"></i>
+                      <h7>Preliminary Evaluation Form</h7>
+                      <a class="control-arrow" data-toggle="collapse" data-target="#demo1">
+                          <i class="fa fa-chevron-circle-down"></i>
+                      </a>
+                  </legend>
+                  <div class="collapse in" id="demo1">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> Procuremenr ID : <span class="text-danger">*</span></label>
+                                  <input type="text" id="make" name="make" class="form-control required" readonly/>                          
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> Tender Title : <span class="text-danger">*</span></label>
+                                  <input type="text" id="model" name="model" class="form-control required" readonly/>            
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> NRP Approval : <span class="text-danger">*</span></label>
+                                  <input type="text" id="make" name="make" class="form-control required" readonly />                          
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> Bid Document Submission Date : <span class="text-danger">*</span></label>
+                                  <input type="text" id="model" name="model" class="form-control required" readonly />                       
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> Bid Document Approval : <span class="text-danger">*</span></label>
+                                  <input type="text" id="make" name="make" class="form-control required" readonly />                          
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">  
+                                  <label> Remark  : <span class="text-danger">*</span></label>
+                                  <input type="text" id="model" name="model" class="form-control required" readonly. />                       
+                              </div>
+                          </div>
+
+                      </div>
+
+                  </div>
+                  
+              </fieldset>
+
+          </div>
+
+          <div class="row"></div></br>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /full width modal -->
+
+
+
+    <footer>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>ABOUT MEDI-TENDERS</h5>
+                <p>
+                 Medi-Tenders is the portal where The National Hospital Kandy calls tenders for all the instrumentality wants of the hospital. 
+                </p>
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>USEFUL LINKS</h5>
+                <ul>
+                  <li><a href="https://www.gov.lk/">Government of Sri Lanka</a></li>
+                  <li><a href="http://www.president.gov.lk/"></a>President of Sri Lanka</li>
+                  <li><a href="http://www.health.gov.lk/moh_final/english/">Minstry of Health</a></li>
+                  <li><a href="http://www.kandy-hospital.health.gov.lk/index.php">The National Hospital Kandy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>CONTACT US</h5>
+                <ul>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-phone-square fa-stack-1x fa-inverse"></i>
+                    </span>HOTLINE :  +94 812 222 261 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>PHONE : +94 812 233 337-42 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-fax fa-stack-1x fa-inverse"></i>
+                    </span>FAX : +94 812 233 343 
+                  </li>
+                  <li>
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                    </span>EMAIL : info@kandy-hospital.health.gov.lk
+                  </li>
+                </ul>
+              </div>
+
+              <div class="widget">
+                <h5>Follow us</h5>
+                <ul class="company-social">
+                  <li class="social-facebook"><a href="https://www.facebook.com/nhkandy/"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              <div class="widget">
+                <h5>Our location</h5>
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                </span>National Hospital Kandy, William Gopallawa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Mw, Kandy 20000, Sri Lanka
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5880600599253!2d80.63007491430927!3d7.287620815831245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae36882b22910bf%3A0x82b71793a1e570c5!2sNational%20Hospital%20Kandy!5e0!3m2!1sen!2slk!4v1578904284240!5m2!1sen!2slk" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+              </div>
+            </div>
+            <div class="wow fadeInDown" data-wow-delay="0.1s">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="text-left">
+                  <p>&copy;Copyright - Medicio Theme. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="wow fadeInRight" data-wow-delay="0.1s">
+                <div class="text-right">
+                  <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact. 
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medicio
+                    -->
+                    Designed by <i><a href="https://www.facebook.com/chathurajaliya.udurawana">Chathura J Udurawana</a></i> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+  <!-- Core JavaScript Files -->
+  
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.news-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 8000,
+            arrows: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            dots: false,
+              pauseOnHover: false,
+              responsive: [{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1
+              }
+            }, {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 1
+              }
+            }]
+        });
+  });
+
+  // //switches
+  // $(document).ready(function(){
+
+  //     // Initialize multiple switches
+  //     var elems = Array.prototype.slice.call(document.querySelectorAll('.switchery'));
+  //     elems.forEach(function(html) {
+  //         var switchery = new Switchery(html);
+  //     });
+
+  //     // Colored switches
+  //     var primary = document.querySelector('.switchery-primary');
+  //     var switchery = new Switchery(primary, { color: '#2196F3' });
+
+  //     var danger = document.querySelector('.switchery-danger');
+  //     var switchery = new Switchery(danger, { color: '#EF5350' });
+
+  //     var warning = document.querySelector('.switchery-warning');
+  //     var switchery = new Switchery(warning, { color: '#FF7043' });
+
+  //     var info = document.querySelector('.switchery-info');
+  //     var switchery = new Switchery(info, { color: '#00BCD4'});
+
+
+
+  //     // Checkboxes/radios (Uniform)
+  //     // ------------------------------
+
+  //     // Default initialization
+  //     $(".styled").uniform();
+
+  //     // File input
+  //     $(".file-styled").uniform({
+  //         wrapperClass: 'bg-blue',
+  //         fileButtonHtml: '<i class="icon-file-plus"></i>'
+  //     });
+
+
+  //     //
+  //     // Contextual colors
+  //     //
+
+  //     // Primary
+  //     $(".control-primary").uniform({
+  //         wrapperClass: 'border-primary-600 text-primary-800'
+  //     });
+
+  //     // Danger
+  //     $(".control-danger").uniform({
+  //         wrapperClass: 'border-danger-600 text-danger-800'
+  //     });
+
+  //     // Success
+  //     $(".control-success").uniform({
+  //         wrapperClass: 'border-success-600 text-success-800'
+  //     });
+
+  //     // Warning
+  //     $(".control-warning").uniform({
+  //         wrapperClass: 'border-warning-600 text-warning-800'
+  //     });
+
+  //     // Info
+  //     $(".control-info").uniform({
+  //         wrapperClass: 'border-info-600 text-info-800'
+  //     });
+
+  //     // Custom color
+  //     $(".control-custom").uniform({
+  //         wrapperClass: 'border-indigo-600 text-indigo-800'
+  //     });
+
+
+
+  //     // Bootstrap switch
+  //     // ------------------------------
+
+  //     $(".switch").bootstrapSwitch();
+    
+  //   });
+
+
+  //modal and file upload
+  $(document).ready(function(){
+
+    // Modal template
+    var modalTemplate = '<div class="modal-dialog modal-lg" role="document">\n' +
+        '  <div class="modal-content">\n' +
+        '    <div class="modal-header">\n' +
+        '      <div class="kv-zoom-actions btn-group">{toggleheader}{fullscreen}{borderless}{close}</div>\n' +
+        '      <h6 class="modal-title">{heading} <small><span class="kv-zoom-title"></span></small></h6>\n' +
+        '    </div>\n' +
+        '    <div class="modal-body">\n' +
+        '      <div class="floating-buttons btn-group"></div>\n' +
+        '      <div class="kv-zoom-body file-zoom-content"></div>\n' + '{prev} {next}\n' +
+        '    </div>\n' +
+        '  </div>\n' +
+        '</div>\n';
+
+    // Buttons inside zoom modal
+    var previewZoomButtonClasses = {
+        toggleheader: 'btn btn-default btn-icon btn-xs btn-header-toggle',
+        fullscreen: 'btn btn-default btn-icon btn-xs',
+        borderless: 'btn btn-default btn-icon btn-xs',
+        close: 'btn btn-default btn-icon btn-xs'
+    };
+
+    // Icons inside zoom modal classes
+    var previewZoomButtonIcons = {
+        prev: '<i class="icon-arrow-left32"></i>',
+        next: '<i class="icon-arrow-right32"></i>',
+        toggleheader: '<i class="icon-menu-open"></i>',
+        fullscreen: '<i class="icon-screen-full"></i>',
+        borderless: '<i class="icon-alignment-unalign"></i>',
+        close: '<i class="icon-cross3"></i>'
+    };
+
+    // File actions
+    var fileActionSettings = {
+        zoomClass: 'btn btn-link btn-xs btn-icon',
+        zoomIcon: '<i class="icon-zoomin3"></i>',
+        dragClass: 'btn btn-link btn-xs btn-icon',
+        dragIcon: '<i class="icon-three-bars"></i>',
+        removeClass: 'btn btn-link btn-icon btn-xs',
+        removeIcon: '<i class="icon-trash"></i>',
+        indicatorNew: '<i class="icon-file-plus text-slate"></i>',
+        indicatorSuccess: '<i class="icon-checkmark3 file-icon-large text-success"></i>',
+        indicatorError: '<i class="icon-cross2 text-danger"></i>',
+        indicatorLoading: '<i class="icon-spinner2 spinner text-muted"></i>'
+    };
+
+    //
+    // AJAX upload
+    //
+
+    $(".file-input-ajax").fileinput({
+        uploadUrl: "http://localhost", // server upload action
+        uploadAsync: true,
+        maxFileCount: 5,
+        initialPreview: [],
+        fileActionSettings: {
+            removeIcon: '<i class="icon-bin"></i>',
+            removeClass: 'btn btn-link btn-xs btn-icon',
+            uploadIcon: '<i class="icon-upload"></i>',
+            uploadClass: 'btn btn-link btn-xs btn-icon',
+            zoomIcon: '<i class="icon-zoomin3"></i>',
+            zoomClass: 'btn btn-link btn-xs btn-icon',
+            indicatorNew: '<i class="icon-file-plus text-slate"></i>',
+            indicatorSuccess: '<i class="icon-checkmark3 file-icon-large text-success"></i>',
+            indicatorError: '<i class="icon-cross2 text-danger"></i>',
+            indicatorLoading: '<i class="icon-spinner2 spinner text-muted"></i>',
+        },
+        layoutTemplates: {
+            icon: '<i class="icon-file-check"></i>',
+            modal: modalTemplate
+        },
+        initialCaption: "No file selected",
+        previewZoomButtonClasses: previewZoomButtonClasses,
+        previewZoomButtonIcons: previewZoomButtonIcons
+    });
+
+
+  });
+
+
+</script>
+ 
+</body>
+
+</html>
